@@ -720,3 +720,229 @@ body{font-family:Inter,system-ui,Segoe UI,Arial;background:linear-gradient(180de
 	.playBtn{width:48px;height:48px}
 }
 
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width: 992px){
+
+    .familia-card,
+    .evento-card,
+    .mesa-card,
+    .confirmacion-card,
+    .countdown-card{
+        padding:50px 25px;
+    }
+
+    .familia-card h2,
+    .evento-card h2,
+    .mesa-card h2,
+    .confirmacion-card h2,
+    .gallery-section h2{
+        font-size:3rem;
+    }
+
+    .confirmacion-card h1{
+        font-size:4rem;
+    }
+
+    .timeline::before{
+        left:45px;
+    }
+
+    .timeline-item{
+        align-items:flex-start;
+    }
+
+    .timeline-content{
+        margin-left:20px;
+    }
+
+}
+
+/* ==========================
+   CELULARES
+========================== */
+
+@media (max-width: 768px){
+
+    section{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+
+    .familia-card,
+    .evento-card,
+    .mesa-card,
+    .confirmacion-card,
+    .countdown-card{
+        padding:40px 20px;
+        border-radius:25px;
+    }
+
+    .familia-card h2,
+    .evento-card h2,
+    .mesa-card h2,
+    .gallery-section h2{
+        font-size:2.5rem;
+    }
+
+    .confirmacion-card h2{
+        font-size:2rem;
+    }
+
+    .confirmacion-card h1{
+        font-size:3rem;
+    }
+
+    .mensaje-principal,
+    .mensaje-destacado,
+    .mensaje-final{
+        font-size:1rem;
+    }
+
+    /* Padres y abuelos */
+
+    .familia-grid{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .familia-box{
+        width:100%;
+        max-width:350px;
+    }
+
+    /* Timeline */
+
+    .timeline::before{
+        left:40px;
+    }
+
+    .timeline-item{
+        align-items:flex-start;
+    }
+
+    .timeline-icon{
+        width:80px;
+        height:80px;
+        min-width:80px;
+        font-size:28px;
+    }
+
+    .timeline-content{
+        margin-left:15px;
+        padding:20px;
+    }
+
+    .timeline-content h3{
+        font-size:1.2rem;
+    }
+
+    /* Contador */
+
+    #countdown{
+        gap:10px;
+    }
+
+    .time-box{
+        width:120px;
+        height:120px;
+    }
+
+    .time-box span{
+        font-size:2.2rem;
+    }
+
+    /* Mesa de regalos */
+
+    .opciones-regalo{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .opcion{
+        width:100%;
+        max-width:300px;
+    }
+
+    /* Confirmación */
+
+    .btn-whatsapp{
+        width:100%;
+        justify-content:center;
+    }
+
+    /* Galería */
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid img{
+        height:300px;
+    }
+
+    /* Mariposas decorativas */
+
+    .mariposa{
+        font-size:25px;
+        opacity:.4;
+    }
+
+}
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width: 480px){
+
+    .familia-card h2,
+    .evento-card h2,
+    .mesa-card h2,
+    .gallery-section h2{
+        font-size:2rem;
+    }
+
+    .confirmacion-card h1{
+        font-size:2.3rem;
+    }
+
+    .confirmacion-card p{
+        font-size:1.2rem;
+    }
+
+    .icono-corona,
+    .icono-principal,
+    .icono-regalo{
+        font-size:40px;
+    }
+
+    .time-box{
+        width:90px;
+        height:90px;
+    }
+
+    .time-box span{
+        font-size:1.8rem;
+    }
+
+    .time-box small{
+        font-size:.8rem;
+    }
+
+    .timeline-icon{
+        width:65px;
+        height:65px;
+        min-width:65px;
+        font-size:22px;
+    }
+
+    .btn-evento,
+    .btn-whatsapp{
+        font-size:.9rem;
+        padding:12px 18px;
+    }
+
+}
