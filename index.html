@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invitación XV Años</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <main class="invitation">
+    <!-- Portada -->
+    <section class="cover reveal" id="cover">
+      <div class="cover-image" id="coverImage"></div>
+      <div class="cover-overlay">
+        <h1 id="nombre">Ana Valeria</h1>
+        <p id="sub">Mis XV Años</p>
+        <p id="fecha">Sábado 01 de Agosto, 2026 - 6:00 PM</p>
+        <div class="countdown" id="countdown">
+          <div><span id="days">0</span><small>Días</small></div>
+          <div><span id="hours">0</span><small>Horas</small></div>
+          <div><span id="minutes">0</span><small>Min</small></div>
+          <div><span id="seconds">0</span><small>Seg</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reproductor de música -->
+    <section class="music-player reveal" id="musicPlayer">
+      <div class="music-caption" style="font-style: italic;">Dale play a mi cancion favorita</div>
+      <div class="audio-player">
+        <audio id="audio" src="audio/golden.mp3" preload="metadata"></audio>
+        <button id="playBtn" class="playBtn">▶</button>
+        <div class="progress-wrap" id="progressWrap">
+          <div class="progress" id="progress"></div>
+        </div>
+        <div class="time"><span id="current">0:00</span> / <span id="duration">0:00</span></div>
+      </div>
+    </section>
+
+    <!-- Mensaje y menciones -->
+    <section class="message reveal" style="padding: 50px;">
+      <blockquote class="heart" style="color: #7a2e57; font-weight: 600;">Este será un día muy especial, en el cual quiero dar gracias principalmente a Dios por permitirme seguir con vida. <br> A mis padres, abuelos, tíos, amigos y demás familiares, por verme crecer y 
+      acompañarme en esta etapa de mi vida. <br> Los días especiales siempre llegan, pero los inolvidables se vuelven único por las personas que forman parte de esos recuerdos.<br> 
+      Y por eso quiero que me acompañes en este día tan importante para mí en compañía de:</blockquote>
+      <div style="display:flex; justify-content: space-between; margin-top: 30px;" class="heart" >
+        <div class="mentions" style="text-align: center; font-weight: 600;">
+          <p style="color: #402a31;"><strong>Mis padres:</strong></p>
+          <p style="color: #7a2e57;">Guillermo Licona Yañes</p>
+          <p style="color: #7a2e57;">Estela Espitia Perez</p>
+        </div>
+        <div class="mentions" style="text-align: center; font-weight: 600;">
+          <p style="color: #402a31;"><strong>Mis padres:</strong></p>
+          <p style="color: #7a2e57;">Guillermo Licona Yañes</p>
+          <p style="color: #7a2e57;">Estela Espitia Perez</p>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Galería -->
+    <!--<section class="gallery">
+      <h2>Galería</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/photo1.jpg" alt="foto 1"></div>
+          <div class="swiper-slide"><img src="images/photo2.jpg" alt="foto 2"></div>
+          <div class="swiper-slide"><img src="images/photo3.jpg" alt="foto 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p class="gallery-hint">Desliza para ver más fotos</p>
+    </section>-->
+
+    <!-- Itinerario en estilo vertical (según diseño adjunto) -->
+    <section class="message reveal" style="padding: 50px;">
+      <blockquote class="heart" style="color: #7a2e57;">
+        <i class="fas fa-calendar-alt"></i>
+        <div class="event-time">Sábado 01 de<br> Agosto del 2026.</div>
+
+        <div class="mentions">
+          <i class="fas fa-church"></i>
+          <div class="event-heading">Ceremonia Religiosa</div>
+          <div class="event-place">Iglesia de los 12 apostoles, Jardines de Morelos Ecatepec de Morelos.</div>
+          <div class="event-time">6:00 P.M.</div>
+          <a class="btn-location" href="https://maps.app.goo.gl/NYpDmNagxsPC3S146" target="_blank">Ver ubicación</a>
+        </div>
+
+        <div class="mentions">
+          <i class="fas fa-glass-cheers"></i>
+          <div class="event-heading">Recepción</div>
+          <div class="event-place">Salon Emperador.</div>
+          <div class="event-time">8:00 P.M.</div>
+          <a class="btn-location" href="https://maps.app.goo.gl/StVfyo1MnBwjfjHZA" target="_blank">Ver ubicación</a>
+        </div>
+      </blockquote>
+    </section>
+
+    <!-- Mesa de regalos -->
+    <section class="gifts reveal">
+      <h2>Mesa de Regalos</h2>
+      <p>Si deseas apoyar con un regalo, puedes hacerlo aquí:</p>
+      <ul>
+        <li>Cuenta bancaria: 0123456789 (Banco Ejemplo)</li>
+        <li>Tarjeta: Visa **** 1234</li>
+        <li>O trae tu regalo a la fiesta</li>
+      </ul>
+    </section>
+
+
+    <!-- Confirmación -->
+    <section class="rsvp reveal">
+      <h2>Confirmación</h2>
+      <div class="rsvp-card">
+        <form id="rsvpForm">
+          <div class="row">
+            <label class="field">
+              <input type="text" id="rsvpName" required />
+              <span class="label">Nombre completo</span>
+            </label>
+            <label class="field">
+              <input type="email" id="rsvpEmail" required />
+              <span class="label">Correo electrónico</span>
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="field">
+              <input type="tel" id="rsvpPhone" />
+              <span class="label">Teléfono (opcional)</span>
+            </label>
+            <label class="field select">
+              <select id="rsvpAnswer">
+                <option value="yes">Sí, asistiré</option>
+                <option value="no">No podré ir</option>
+                <option value="maybe">Quizás</option>
+              </select>
+              <span class="label">Asistencia</span>
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="field small">
+              <input type="number" id="rsvpGuests" min="0" placeholder="" />
+              <span class="label">Acompañantes</span>
+            </label>
+            <div class="actions">
+              <button class="primary" type="submit">Enviar y guardar</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="rsvpResult" class="result"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
