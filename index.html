@@ -33,6 +33,10 @@
 
     <!-- Reproductor de música -->
     <section class="music-player reveal" id="musicPlayer">
+      <p class="intro-evento">
+          Te esperamos para compartir juntos una noche llena
+          de alegría, emociones y momentos inolvidables.
+      </p>
       <div class="music-caption" style="font-style: italic;">Dale play a mi cancion favorita</div>
       <div class="audio-player">
         <audio id="audio" src="audio/golden.mp3" preload="metadata"></audio>
@@ -45,24 +49,60 @@
     </section>
 
     <!-- Mensaje y menciones -->
-    <section class="message reveal" style="padding: 50px;">
-      <blockquote class="heart" style="color: #7a2e57; font-weight: 600;">Este será un día muy especial, en el cual quiero dar gracias principalmente a Dios por permitirme seguir con vida. <br> A mis padres, abuelos, tíos, amigos y demás familiares, por verme crecer y 
-      acompañarme en esta etapa de mi vida. <br> Los días especiales siempre llegan, pero los inolvidables se vuelven único por las personas que forman parte de esos recuerdos.<br> 
-      Y por eso quiero que me acompañes en este día tan importante para mí en compañía de:</blockquote>
-      <div style="display:flex; justify-content: space-between; margin-top: 30px;" class="heart" >
-        <div class="mentions" style="text-align: center; font-weight: 600;">
-          <p style="color: #402a31;"><strong>Mis padres:</strong></p>
-          <p style="color: #7a2e57;">Guillermo Licona Yañes</p>
-          <p style="color: #7a2e57;">Estela Espitia Perez</p>
+    <section class="familia-section reveal">
+
+    <div class="familia-card">
+
+        <div class="icono-corona">👑</div>
+
+        <h2>Con la Bendición de Dios</h2>
+
+        <div class="linea-dorada"></div>
+
+        <p class="mensaje-principal">
+            Este será un día muy especial en mi vida, y quiero agradecer
+            principalmente a Dios por permitirme llegar a este momento tan esperado.
+        </p>
+
+        <p class="mensaje-principal">
+            Gracias a mis padres, abuelos, tíos, amigos y familiares
+            por acompañarme, cuidarme y formar parte de mi historia.
+        </p>
+
+        <p class="mensaje-destacado">
+            Los días especiales siempre llegan,
+            pero los recuerdos inolvidables se construyen junto a las personas que amamos.
+        </p>
+
+        <p class="mensaje-final">
+            Por ello, deseo compartir esta celebración en compañía de:
+        </p>
+
+        <div class="familia-grid">
+
+            <div class="familia-box">
+                <div class="icono">💖</div>
+
+                <h3>Mis Padres</h3>
+
+                <p>Guillermo Licona Yañes</p>
+                <p>Estela Espitia Pérez</p>
+            </div>
+
+            <div class="familia-box">
+                <div class="icono">🌷</div>
+
+                <h3>Mis Abuelos</h3>
+
+                <p>Nombre Abuelo</p>
+                <p>Nombre Abuela</p>
+            </div>
+
         </div>
-        <div class="mentions" style="text-align: center; font-weight: 600;">
-          <p style="color: #402a31;"><strong>Mis padres:</strong></p>
-          <p style="color: #7a2e57;">Guillermo Licona Yañes</p>
-          <p style="color: #7a2e57;">Estela Espitia Perez</p>
-        </div>
-      </div>
-      
-    </section>
+
+    </div>
+
+</section>
 
     <!-- Galería -->
     <!--<section class="gallery">
@@ -79,85 +119,172 @@
     </section>-->
 
     <!-- Itinerario en estilo vertical (según diseño adjunto) -->
-    <section class="message reveal" style="padding: 50px;">
-      <blockquote class="heart" style="color: #7a2e57;">
-        <i class="fas fa-calendar-alt"></i>
-        <div class="event-time">Sábado 01 de<br> Agosto del 2026.</div>
+    <section class="evento-section reveal">
 
-        <div class="mentions">
-          <i class="fas fa-church"></i>
-          <div class="event-heading">Ceremonia Religiosa</div>
-          <div class="event-place">Iglesia de los 12 apostoles, Jardines de Morelos Ecatepec de Morelos.</div>
-          <div class="event-time">6:00 P.M.</div>
-          <a class="btn-location" href="https://maps.app.goo.gl/NYpDmNagxsPC3S146" target="_blank">Ver ubicación</a>
+    <div class="evento-card">
+
+        <div class="icono-principal">✨</div>
+
+        <h2>Detalles del Evento</h2>
+
+        <div class="linea-dorada"></div>
+
+        <div class="fecha-principal">
+            <span>📅</span>
+            Sábado 01 de Agosto de 2026
         </div>
 
-        <div class="mentions">
-          <i class="fas fa-glass-cheers"></i>
-          <div class="event-heading">Recepción</div>
-          <div class="event-place">Salon Emperador.</div>
-          <div class="event-time">8:00 P.M.</div>
-          <a class="btn-location" href="https://maps.app.goo.gl/StVfyo1MnBwjfjHZA" target="_blank">Ver ubicación</a>
+        <div class="timeline">
+
+            <!-- Ceremonia -->
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-church"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>Ceremonia Religiosa</h3>
+
+                    <p>
+                        Iglesia de los 12 Apóstoles
+                    </p>
+
+                    <small>
+                        Jardines de Morelos,
+                        Ecatepec de Morelos
+                    </small>
+
+                    <div class="hora">
+                        6:00 PM
+                    </div>
+
+                    <a
+                        class="btn-evento"
+                        href="https://maps.app.goo.gl/NYpDmNagxsPC3S146"
+                        target="_blank"
+                    >
+                        📍 Ver ubicación
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Recepción -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>Recepción</h3>
+
+                    <p>
+                        Salón Emperador
+                    </p>
+
+                    <div class="hora">
+                        8:00 PM
+                    </div>
+
+                    <a
+                        class="btn-evento"
+                        href="https://maps.app.goo.gl/StVfyo1MnBwjfjHZA"
+                        target="_blank"
+                    >
+                        📍 Ver ubicación
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-      </blockquote>
-    </section>
+
+    </div>
+
+</section>
 
     <!-- Mesa de regalos -->
-    <section class="gifts reveal">
-      <h2>Mesa de Regalos</h2>
-      <p>Si deseas apoyar con un regalo, puedes hacerlo aquí:</p>
-      <ul>
-        <li>Cuenta bancaria: 0123456789 (Banco Ejemplo)</li>
-        <li>Tarjeta: Visa **** 1234</li>
-        <li>O trae tu regalo a la fiesta</li>
-      </ul>
-    </section>
+    <section class="mesa-regalos">
+    <div class="mesa-card">
+
+        <div class="icono-regalo">🎁</div>
+
+        <h2>Mesa de Regalos</h2>
+
+        <p class="mensaje">
+            El mejor regalo es compartir este momento tan especial conmigo,
+            pero si deseas obsequiarme un detalle, aquí encontrarás algunas opciones.
+        </p>
+
+        <div class="opciones-regalo">
+
+            <a href="#" class="opcion">
+                <span>🛍️</span>
+                Liverpool
+            </a>
+
+            <a href="#" class="opcion">
+                <span>🛒</span>
+                Amazon
+            </a>
+
+            <a href="#" class="opcion">
+                <span>💎</span>
+                Palacio de Hierro
+            </a>
+
+        </div>
+
+        <div class="sobre">
+            <h3>Lluvia de Sobres</h3>
+
+            <p>
+                Si lo prefieres, también puedes participar con una lluvia de sobres.
+            </p>
+
+            <div class="sobre-icon">
+                ✉️
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
     <!-- Confirmación -->
-    <section class="rsvp reveal">
-      <h2>Confirmación</h2>
-      <div class="rsvp-card">
-        <form id="rsvpForm">
-          <div class="row">
-            <label class="field">
-              <input type="text" id="rsvpName" required />
-              <span class="label">Nombre completo</span>
-            </label>
-            <label class="field">
-              <input type="email" id="rsvpEmail" required />
-              <span class="label">Correo electrónico</span>
-            </label>
-          </div>
+    <section class="confirmacion-section">
+        <div class="mariposa mariposa-1">🦋</div>
+        <div class="mariposa mariposa-2">🦋</div>
+        <div class="mariposa mariposa-3">🦋</div>
 
-          <div class="row">
-            <label class="field">
-              <input type="tel" id="rsvpPhone" />
-              <span class="label">Teléfono (opcional)</span>
-            </label>
-            <label class="field select">
-              <select id="rsvpAnswer">
-                <option value="yes">Sí, asistiré</option>
-                <option value="no">No podré ir</option>
-                <option value="maybe">Quizás</option>
-              </select>
-              <span class="label">Asistencia</span>
-            </label>
-          </div>
+        <div class="confirmacion-card">
+            <div class="corona">👑</div>
 
-          <div class="row">
-            <label class="field small">
-              <input type="number" id="rsvpGuests" min="0" placeholder="" />
-              <span class="label">Acompañantes</span>
-            </label>
-            <div class="actions">
-              <button class="primary" type="submit">Enviar y guardar</button>
-            </div>
-          </div>
-        </form>
+            <h2>¡Me encantaría</h2>
+            <h1>contar con tu presencia!</h1>
 
-        <div id="rsvpResult" class="result"></div>
-      </div>
+            <div class="separador">❤</div>
+
+            <p>
+                ¿Nos ayudas confirmando<br>
+                tu asistencia?
+            </p>
+
+            <a
+                href="https://wa.me/555?text=Hola,%20confirmo%20mi%20asistencia%20a%20los%20XV%20años."
+                target="_blank"
+                class="btn-whatsapp"
+            >
+                CONFIRMAR ASISTENCIA
+            </a>
+        </div>
     </section>
 
   </main>
