@@ -1246,5 +1246,11 @@ body{font-family:Inter,system-ui,Segoe UI,Arial;background:linear-gradient(180de
         font-size:.9rem;
         padding:12px 18px;
     }
+    .dresscode-card h2{
+        font-size: 2rem;
+    }
+    .dresscode-icon{
+        font-size: 40px;
+    }
 
 }
