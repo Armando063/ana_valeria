@@ -16,20 +16,63 @@
 <body>
   <main class="invitation">
     <!-- Portada -->
-    <section class="cover reveal" id="cover">
-      <div class="cover-image" id="coverImage"></div>
-      <div class="cover-overlay">
-        <h1 id="nombre">Ana Valeria</h1>
-        <p id="sub">Mis XV Años</p>
-        <p id="fecha">Sábado 01 de Agosto, 2026 - 6:00 PM</p>
-        <div class="countdown" id="countdown">
-          <div><span id="days">0</span><small>Días</small></div>
-          <div><span id="hours">0</span><small>Horas</small></div>
-          <div><span id="minutes">0</span><small>Min</small></div>
-          <div><span id="seconds">0</span><small>Seg</small></div>
+
+
+    <div class="cover-overlay">
+
+        <div class="cover-card">
+
+            <img
+                src="img/portada.png"
+                alt="Ana Valeria"
+                class="quince-photo"
+            >
+
+            <div class="cover-content">
+
+                <div class="gold-divider"></div>
+
+                <p class="cover-message">
+                    Tengo el honor de invitarte a celebrar
+                    uno de los días más importantes de mi vida.
+                </p>
+
+                <div class="countdown" id="countdown">
+
+                    <div class="time-box">
+                        <span id="days">0</span>
+                        <small>Días</small>
+                    </div>
+
+                    <div class="time-box">
+                        <span id="hours">0</span>
+                        <small>Horas</small>
+                    </div>
+
+                    <div class="time-box">
+                        <span id="minutes">0</span>
+                        <small>Min</small>
+                    </div>
+
+                    <div class="time-box">
+                        <span id="seconds">0</span>
+                        <small>Seg</small>
+                    </div>
+
+                </div>
+
+                <div class="scroll-indicator">
+                    Desliza para descubrir
+                    <br>
+                    ↓
+                </div>
+
+            </div>
+
         </div>
-      </div>
-    </section>
+
+    </div>
+
 
     <!-- Reproductor de música -->
     <section class="music-player reveal" id="musicPlayer">
@@ -37,7 +80,7 @@
           Te esperamos para compartir juntos una noche llena
           de alegría, emociones y momentos inolvidables.
       </p>
-      <div class="music-caption" style="font-style: italic;">Dale play a mi cancion favorita</div>
+      <div class="music-caption" style="font-style: italic; color: #cf6d97;"><b>Dale play a mi cancion favorita</b></div>
       <div class="audio-player">
         <audio id="audio" src="audio/golden.mp3" preload="metadata"></audio>
         <button id="playBtn" class="playBtn">▶</button>
@@ -49,7 +92,7 @@
     </section>
 
     <!-- Mensaje y menciones -->
-    <section class="familia-section reveal">
+
 
     <div class="familia-card">
 
@@ -90,19 +133,19 @@
             </div>
 
             <div class="familia-box">
-                <div class="icono">🌷</div>
+                <div class="icono">👑</div>
 
-                <h3>Mis Abuelos</h3>
+                <h3>Mis Padrinos</h3>
 
-                <p>Nombre Abuelo</p>
-                <p>Nombre Abuela</p>
+                <p>Celso Vargas Badillo</p>
+                <p>Paola Espitia Pérez</p>
             </div>
 
         </div>
 
     </div>
 
-</section>
+
 
     <!-- Galería -->
     <!--<section class="gallery">
@@ -119,7 +162,7 @@
     </section>-->
 
     <!-- Itinerario en estilo vertical (según diseño adjunto) -->
-    <section class="evento-section reveal">
+
 
     <div class="evento-card">
 
@@ -208,10 +251,9 @@
 
     </div>
 
-</section>
+
 
     <!-- Mesa de regalos -->
-    <section class="mesa-regalos">
     <div class="mesa-card">
 
         <div class="icono-regalo">🎁</div>
@@ -219,11 +261,11 @@
         <h2>Mesa de Regalos</h2>
 
         <p class="mensaje">
-            El mejor regalo es compartir este momento tan especial conmigo,
-            pero si deseas obsequiarme un detalle, aquí encontrarás algunas opciones.
+            <b>La alegría de compartir este día contigo será un hermoso regalo.</b><br><br>
+            Si además deseas tener un detalle conmigo, lo recibiré con mucho cariño como recuerdo de este momento tan especial.
         </p>
 
-        <div class="opciones-regalo">
+        <!--<div class="opciones-regalo">
 
             <a href="#" class="opcion">
                 <span>🛍️</span>
@@ -252,10 +294,10 @@
             <div class="sobre-icon">
                 ✉️
             </div>
-        </div>
+        </div>-->
 
     </div>
-</section>
+
 
 
     <!-- Confirmación -->
