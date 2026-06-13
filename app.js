@@ -8,7 +8,7 @@ $(function(){
   $('#coverImage').css('background-image','linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.25)),url(images/cover.jpg)');
 
   // Countdown
-  const eventDate = new Date('2026-07-10T19:00:00');
+const eventDate = new Date(2026, 7, 1, 18, 0, 0);
   function tick(){
     const now = new Date();
     let diff = Math.max(0,eventDate - now);

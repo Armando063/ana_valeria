@@ -34,6 +34,80 @@ body{font-family:Inter,system-ui,Segoe UI,Arial;background:linear-gradient(180de
 .timeline-item.left .body{justify-content:flex-end;margin-right:40px}
 .timeline-item.right{text-align:left;padding-left:90px}
 .timeline-item.right .body{justify-content:flex-start;margin-left:40px}
+/*Codigo de vestimenta*/
+.dresscode-section{
+    padding:100px 20px;
+    background:
+    linear-gradient(
+        180deg,
+        #fff7fa,
+        #ffeaf3
+    );
+}
+
+.dresscode-card{
+
+    max-width:800px;
+    margin:auto;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+    border-radius:35px;
+
+    background:
+    rgba(255,255,255,.75);
+
+    backdrop-filter:blur(10px);
+
+    border:2px solid rgba(212,175,55,.3);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.dresscode-icon{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.dresscode-card h2{
+    font-family:'Great Vibes', cursive;
+    font-size:4rem;
+    color:#cf6d97;
+}
+
+.dresscode-text{
+    color:#7a2e57;
+    line-height:1.9;
+    max-width:600px;
+    margin:20px auto;
+}
+
+.color-reserved{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:15px 25px;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffdbe9,
+        #ffc8dd
+    );
+
+    color:#a05273;
+
+    font-weight:bold;
+
+    border:1px solid rgba(212,175,55,.3);
+}
 /*Portada*/
 .cover{
 
